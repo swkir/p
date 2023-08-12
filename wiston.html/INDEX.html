@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="c.css">
+</head>
+<body style="background-color: rgb(250, 246, 246);">
+   <section id="caja">
+    <form action="" name="formulario" method="get">
+
+<input  type="text" name="nombre" id="nombre" maxlength="10" placeholder="Nombre:">
+<br>
+<input type="radio" name="sexo" id="hombre" value="hombre"><p>Hombre</p>
+<br>
+<input type="radio" name="sexo" id="mujer" value="mujer"><p>Mujer</p>
+<br>
+<input type="checkbox" name="terminos" id="terminos"><p>TERMINOS Y CONDICIONES</p> 
+<br>
+  <input type="submit" id="btn" name="btn" value="ENVIAR" onclick="azul()"></form> </section>
+  <script>
+//hhhhhh
+//ñoñññ
+    function azul() {
+        document.getElementById("caja").style.backgroundColor="red";
+    }
+//{{{
+    ///
+//
+///
+  </script>
+<script>
+(function(){//para acceder al documento
+    var formulario=document.getElementsByName('formulario')[0],
+         elementos=formulario.elements,
+         boton= document.getElementById('btn');
+         //validar sexo
+    validarNombre=function(e){
+        if (formulario.nombre.value == 0) {
+            alert("COMPLETA EL CAMPO NOMBRE") ;
+            e.preventDefault();
+        }
+    };
+    //sexo
+    validarRadio=function(e){
+if(formulario.sexo[0].checked==true|| formulario.sexo[1].checked==true);
+else{
+    alert("ESCOGE TU PUTO SEXO");
+    e.preventDefault();
+}
+    };
+    //terminos y condiciones
+    validarCheckbox=function(e){
+        if (formulario.terminos.checked==false){
+            alert("ACEEPTA LOS TERMINOS Y CONDICIONES")
+            e.preventDefault();
+        }
+    }
+//esta son la funciones
+var validar=function(e){
+    validarNombre(e);
+    validarRadio(e);
+    validarCheckbox(e);
+};
+//boton de enviar
+formulario.addEventListener("submit", validar)
+
+}())
+
+
+
+
+</script>
+</body>
+</html>

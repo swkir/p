@@ -1,0 +1,9 @@
+section{
+    width: 400px;height: 400px; ;background-color:  rgb(0, 140, 255);position: absolute;top: 200px;border-color: black;
+}
+input {
+    background-color: indigo;color: aliceblue;
+}
+p{
+    background-color: blueviolet;color: aliceblue;font-size: 10px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ ;}
